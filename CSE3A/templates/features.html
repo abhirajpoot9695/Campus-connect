@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} contact {% endblock title %} 
+
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CampusConnect Features</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p.subtitle {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .icon1 { color: #4CAF50; }
+        .icon2 { color: #2196F3; }
+        .icon3 { color: #FF9800; }
+        .icon4 { color: #E91E63; }
+        .icon5 { color: #9C27B0; }
+        .icon6 { color: #009688; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CampusConnect Features</h1>
+    <p class="subtitle">Everything you need to stay connected in your campus</p>
+
+    <div class="features">
+
+        <div class="card">
+            <div class="icon icon1">👤</div>
+            <h3>User Profiles</h3>
+            <p>Create and manage student profiles with personal and academic details.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon icon2">📢</div>
+            <h3>Notice Board</h3>
+            <p>Stay updated with latest college announcements and important notices.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon icon3">📅</div>
+            <h3>Events</h3>
+            <p>Explore upcoming events and register easily for participation.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon icon4">💬</div>
+            <h3>Discussion Forum</h3>
+            <p>Ask questions, share ideas, and interact with other students.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon icon5">📚</div>
+            <h3>Study Materials</h3>
+            <p>Upload and download notes, assignments, and study resources.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon icon6">🔔</div>
+            <h3>Notifications</h3>
+            <p>Get instant alerts for new notices, events, and updates.</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+{% endblock content %}
